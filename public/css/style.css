@@ -1,0 +1,14 @@
+
+body{
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.advertencia{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
