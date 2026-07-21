@@ -1,1 +1,164 @@
-<h1>Home</h1>
+<div class="home-text-head-container">
+    <h1>Panel de Control</h1>
+<p>Resumen general del taller — Estado operativo al 13 enero 2024</p>
+
+
+</div>
+
+<section class="cuadros container row">
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">{{numero}}</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="numero-cuadro">0</h3>
+        <p class="cuadro-descripcion"></p>
+    </div>
+
+
+    
+
+</section>
+
+
+
+
+
+<section class="ordenes-seccion">
+
+      <table class="ordenes-tabla">
+        <div class="tabla-head">
+            <div class="tabla-text">
+                <h4 class="tabla-text-head">Últimas órdenes de trabajo</h4>
+                <p class="recientes">Las 5 más recientes</p>
+            </div>
+
+        <a href="" class="link-ver-todas-ordenes">Ver todas </a>
+
+        </div>
+  <thead>
+    <tr class="tr-th">
+      <th>N. ORDEN</th>
+      <th>VEHICULO</th>
+      <th>PLACA</th>
+      <th>RECEPCION</th>
+      <th>ESTADO</th>
+      <th>TOTAL</th>
+    <th>    </th>
+
+
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each autores}}
+    <tr>
+      <td>{{nombreautor}}</td>
+      <td>{{correoautor}}</td>
+      <td>{{cantidadLibros}}</td>
+      <td>{{nombreautor}}</td>
+      <td>{{correoautor}}</td>
+      <td>{{cantidadLibros}}</td>
+      <td><a href=""> Ver detalle</a></td>    
+</tr>
+    {{else}}
+    <tr>
+      <td colspan="4">No hay autores registrados.</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+</section>
+
+
+<section class="accesos-rapido">
+    <h3 class="accesto-rapido-titulo">
+        Accesos rápidos
+    </h3>
+    <a href="">
+         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="titulo-acceso">Registrar vehiculo</h3>
+        
+    </div>
+    </a>
+
+     <a href="">
+         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="titulo-acceso">Registrar pieza</h3>
+        
+    </div>
+    </a>
+
+
+     <a href="">
+         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="titulo-acceso">Registrar servicio</h3>
+        
+    </div>
+    </a>
+
+
+     <a href="">
+         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+        <img src="" alt="" class="cuadro-log">
+        <h3 class="titulo-acceso">Crear orden de trabajo</h3>
+        
+    </div>
+    </a>
+</section>
+
+ 
+
+<div class="eliminar-libro" id="eliminar-autor-card" hidden >
+
+ <div class="text-card-eliminar-libro">
+   <h3 class="pregunta">¿Eliminar este registro?</h3>
+  <p class="p-pregunta">¿Está seguro que desea eliminar este autor?</p>
+  <h4 class="nombre-libro" id="nombre-autor-seleccionado"></h4>
+  <p class="advertencia">Esta acción no puede deshacerse.</p>
+ </div>
+  <div class="btns-eliminar-card">
+    <button type="button" class="btn btn-secondary btn-eliminar-libro-card" id="btn-cancelar-autor-card">Cancelar</button>
+    <form id="form-eliminar-autor" action="" method="post">
+      <button type="submit" class="btn btn-danger btn-cancelar-libro-card" id="btn-eliminar-autor-card">Aceptar, eliminar</button>
+    </form>
+  </div>
+</div>

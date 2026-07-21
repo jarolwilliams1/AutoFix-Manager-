@@ -1,0 +1,86 @@
+<div class="marcas-head">
+    <div class="marcas-text-head">
+        <h3 class="text-head">Marcas</h3>
+        <p class="marcas-registradas">6 marcas registradas</p>
+    </div>
+
+    <button>crear marca</button>
+</div>
+
+
+<section class="marcas-seccion">
+
+      <table class="marcas-tabla">
+      
+  <thead>
+    <tr class="tr-th">
+      <th>NOMBRE</th>
+      <th>PAIS DE ORIGEN</th>
+      <th>ESTADO</th>
+      <th>VEHICULOS</th>
+        <th>ACCIONES</th>
+   
+
+
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each autores}}
+    <tr>
+      <td>{{nombreautor}}</td>
+      <td>{{correoautor}}</td>
+      <td>{{cantidadLibros}}</td>
+      <td>{{nombreautor}}</td>
+      <td><button>editar</button> <button>eliminar</button></td>    
+</tr>
+    {{else}}
+    <tr>
+      <td colspan="4">No hay autores registrados.</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+</section>
+
+<section class="nueva-marca">
+
+<div class="nueva-marca-contenedor">
+     <div class="encabezado-bueva-marca">
+        <h3 class="encabezado-nueva-marca-text">Nueva marca</h3>
+        <p class="quitar">X</p>
+ </div>
+
+<form action="" method="get">
+    <div class="mb-3">
+  <label for="nombre-marca" class="form-label">NOMBRE</label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+<div class="mb-3">
+  <label for="pais-marca" class="form-label">PAIS DE ORIGEN</label>
+  <input type="email" class="form-control pais-marca" id="pais-marca" placeholder="Opcional" required>
+</div>
+
+<div class="mb-3">
+      <label for="estado-marca" class="form-label">ESTADO</label>
+ <select class="form-select estado-marca" id="estado-marca" aria-label="Default select example" required>
+  <option selected>Activa</option>
+  <option value="Inactiva">Inactiva</option>
+</select>
+</div>
+
+<div class="botones">
+    <button>Cancelar</button>
+    <button type="submit">Guargar</button>
+</div>
+</form>
+
+
+</div>
+
+
+   
+
+</section>

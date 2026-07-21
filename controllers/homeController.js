@@ -1,6 +1,8 @@
 
 function mostrar (req, res){
-    res.render("home")
+    const numero = 24;
+    res.render("home", {numero})
+    
 
 }
 

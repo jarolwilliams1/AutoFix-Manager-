@@ -24,6 +24,26 @@ const homeRouter = require("./router/homeRouters");
 app.use("/", homeRouter);
 
 
+const ordenesRouter = require("./router/ordenesRouter");
+app.use("/ordenes", ordenesRouter);
+
+
+const marcasRouters = require("./router/marcasRouter");
+app.use("/marcas", marcasRouters);
+
+
+const pieza_repuestoRouter = require("./router/pieza-repuestoRouter");
+app.use("/piezas-repuestos", pieza_repuestoRouter);
+
+
+const vehiculosRouter = require("./router/vehiculosRouter");
+app.use("/vehiculos", vehiculosRouter);
+
+
+const servicioRouter = require("./router/servicioRouter");
+app.use("/servicios", servicioRouter);
+
+
 
 
 
