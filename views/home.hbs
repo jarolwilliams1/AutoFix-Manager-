@@ -1,53 +1,55 @@
 <div class="home-text-head-container">
-    <h1>Panel de Control</h1>
-<p>Resumen general del taller — Estado operativo al 13 enero 2024</p>
+    <h1 class="secction-titulo">Panel de Control</h1>
+<p class="secction-text">Resumen general del taller — Estado operativo al 13 enero 2024</p>
 
 
 </div>
 
-<section class="cuadros container row">
+<section class="cuadros  ">
 
-    <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
+   <div class="cuadros-container row">
+     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">{{numero}}</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Vehículos registrados</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Total órdenes</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Órdenes activas</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Bajo inventario</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Órdenes entregadas</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Órdenes canceladas</p>
     </div>
 
     <div class="cuadro-home col-sm-12 col-md-6 col-lg-4 ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="numero-cuadro">0</h3>
-        <p class="cuadro-descripcion"></p>
+        <p class="cuadro-descripcion">Total facturado</p>
     </div>
+   </div>
 
 
     
@@ -60,8 +62,8 @@
 
 <section class="ordenes-seccion">
 
-      <table class="ordenes-tabla">
-        <div class="tabla-head">
+    <div class="tabla-ordenes-contenedor">
+           <div class="tabla-head">
             <div class="tabla-text">
                 <h4 class="tabla-text-head">Últimas órdenes de trabajo</h4>
                 <p class="recientes">Las 5 más recientes</p>
@@ -70,6 +72,8 @@
         <a href="" class="link-ver-todas-ordenes">Ver todas </a>
 
         </div>
+      <table class="ordenes-tabla">
+    
   <thead>
     <tr class="tr-th">
       <th>N. ORDEN</th>
@@ -97,29 +101,34 @@
 </tr>
     {{else}}
     <tr>
-      <td colspan="4">No hay autores registrados.</td>
+      <td colspan="7">No hay autores registrados.</td>
     </tr>
     {{/each}}
   </tbody>
 </table>
 
+    </div>
+
+
+
 </section>
 
 
-<section class="accesos-rapido">
+<section class="accesos-rapido ">
     <h3 class="accesto-rapido-titulo">
         Accesos rápidos
     </h3>
-    <a href="">
-         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+   <div class="acceso-rapido-contenedor  ">
+     <a href="" class="col-sm-12 col-md-6 col-lg-3 ">
+         <div class="acceso-home ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="titulo-acceso">Registrar vehiculo</h3>
         
     </div>
     </a>
 
-     <a href="">
-         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+     <a href="" class="col-sm-12 col-md-6 col-lg-3 ">
+         <div class="acceso-home ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="titulo-acceso">Registrar pieza</h3>
         
@@ -127,8 +136,8 @@
     </a>
 
 
-     <a href="">
-         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+     <a href="" class="col-sm-12 col-md-6 col-lg-3 ">
+         <div class="acceso-home">
         <img src="" alt="" class="cuadro-log">
         <h3 class="titulo-acceso">Registrar servicio</h3>
         
@@ -136,13 +145,14 @@
     </a>
 
 
-     <a href="">
-         <div class="acceso-home col-sm-12 col-md-6 col-lg-3 ">
+     <a href="" class="col-sm-12 col-md-6 col-lg-3 ">
+         <div class="acceso-home  ">
         <img src="" alt="" class="cuadro-log">
         <h3 class="titulo-acceso">Crear orden de trabajo</h3>
         
     </div>
     </a>
+   </div>
 </section>
 
  

@@ -1,0 +1,157 @@
+<div class="marcas-head">
+    <div class="marcas-text-head">
+        <h3 class="text-head">Servicios</h3>
+        <p class="marcas-registradas">6 servicios registrados</p>
+    </div>
+
+    <button>Registar servicios</button>
+</div>
+
+<section class="filtrar-vehiculo container row">
+
+    <div class="mb-3 col-lg-4 col-md-6 col-sm-12">
+      <label for="estado-marca" class="form-label">ESTADO</label>
+ <select class="form-select estado-marca" id="estado-marca" aria-label="Default select example" required>
+  <option selected>Activa</option>
+  <option value="Inactiva">Inactiva</option>
+</select>
+</div>
+
+<div class="mb-3 col-lg-4 col-md-6 col-sm-12">
+      <label for="estado-marca" class="form-label">ESTADO</label>
+ <select class="form-select estado-marca" id="estado-marca" aria-label="Default select example" required>
+  <option selected>Activa</option>
+  <option value="Inactiva">Inactiva</option>
+</select>
+</div>
+
+
+
+
+</section>
+
+
+<section class="vehiculo-seccion">
+
+      <table class="vehiculos-tabla">
+      
+  <thead>
+    <tr class="tr-th">
+      <th>Nombre</th>
+      <th>Categoria</th>
+      <th>Precio base</th>
+      <th>Duracion</th>
+    <th>Estado</th>
+    <th>Accionnes</th>
+   
+
+
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each autores}}
+    <tr>
+      <td>{{nombreautor}}</td>
+      <td>{{correoautor}}</td>
+      <td>{{cantidadLibros}}</td>
+      <td>{{nombreautor}}</td>
+     <td>{{nombreautor}}</td>
+      <td><button>editar</button> <button>eliminar</button></td>    
+</tr>
+    {{else}}
+    <tr>
+      <td colspan="4">No hay autores registrados.</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+</section>
+
+
+
+<section class="nuevo-vehiculo">
+
+<div class="nuevo-vehiculo-contenedor">
+     <div class="encabezado-nuevo-vehiculo">
+        <h3 class="encabezado-nueva-marca-text">Nueva marca</h3>
+        <p class="quitar">X</p>
+ </div>
+
+<form action="" method="get">
+    <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+   <div class="mb-3 col-md-6 col-sm-12">
+  <label for="nombre-marca" class="form-label">NOMBRE <span class="asterico">*</span></label>
+  <input type="email" class="form-control nombre-marca" id="nombre-marca" placeholder="Ej: Toyota">
+</div>
+
+
+
+<div class="botones">
+    <button>Cancelar</button>
+    <button type="submit">Guargar</button>
+</div>
+</form>
+
+
+</div>
+
+
+   
+
+</section>
