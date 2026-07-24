@@ -218,6 +218,13 @@ a{
     width: 300px;
 }
 
+.marcas-head{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
 
 
 
